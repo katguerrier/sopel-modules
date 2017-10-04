@@ -11,13 +11,9 @@ This module adds a couple commands that allow users to track packages.
 The .track command tells the bot to look up tracking info for a package when you give a number with it, e.g.:
 
 	<@user> .track 999999999999999
-
 	<Sopel> Package status: FAILURE
-
 	<Sopel> Status details: Shipment exception
-
 	<Sopel> Location: Keasbey, NJ 08832
-
 	<Sopel> Last updated: 2017-01-26 at 02:05:34
 
 It works by first guessing the carrier using [tracking_url](https://pypi.python.org/pypi/tracking-url/0.0.2), and then using [Shippo](https://github.com/goshippo/shippo-python-client) to look up the tracking data. **You will need a shippo API key to use this module.**
