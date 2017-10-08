@@ -35,3 +35,17 @@ Allows users to maintain a personal list of packages, using Sopel's "memory" fun
 
 	<@user> .mypkg del 999999999999999
 	<Sopel> user: package deleted.
+
+## NFL Live Scores
+
+Fetches live scores for NFL games and reports them in-channel.
+
+	<@user> .nfl Seahawks
+	<Sopel> LA 10 - 10 SEA
+	<Sopel> 09:55 remaining in Q3
+
+	<@user> .nfl chiefs
+	<Sopel> Pre-game HOU 0 - 0 KC
+	<Sopel> Game time Sun @ 8:30 Eastern
+
+The bot will only work with the full name of the team ("seahawks", not 'SEA'). 
